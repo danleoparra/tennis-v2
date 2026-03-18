@@ -1,5 +1,5 @@
-import TennisReachVisualizer from "../components/TennisReachVisualizer";
+import TennisVisualizer from "../components/TennisVisualizer";
 
 export default function Home() {
-  return <TennisReachVisualizer />;
+  return <TennisVisualizer />;
 }
