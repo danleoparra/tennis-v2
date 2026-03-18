@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Tennis Court Angle Visualizer",
-  description: "Drag players to study real shot windows into the opposite court.",
+  title: "Tennis Visualizer 2.0",
+  description: "Tactical tennis court visualizer with angles, coverage, trajectories and score.",
 };
 
 export default function RootLayout({ children }) {
