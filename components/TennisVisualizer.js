@@ -447,14 +447,10 @@ export default function TennisVisualizer() {
                       <span className="font-semibold text-slate-900">{val.toFixed(1)}°</span>
                     </div>
                   ))}
-                  <div className="border-t border-slate-100 mt-2 pt-2 space-y-1">
+                  <div className="border-t border-slate-100 mt-2 pt-2">
                     <div className="flex justify-between">
-                      <span className="text-slate-500">Position (from left)</span>
-                      <span className="font-semibold text-slate-900">{((activePlayer.x - PA.x) / SCALE).toFixed(2)} m</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-slate-500">Position (from baseline)</span>
-                      <span className="font-semibold text-slate-900">{((activePlayer.y - PA.y) / SCALE).toFixed(2)} m</span>
+                      <span className="text-slate-500">Distance to ball</span>
+                      <span className="font-semibold text-slate-900">{(Math.hypot(activePlayer.x - ball.x, activePlayer.y - ball.y) / SCALE).toFixed(2)} m</span>
                     </div>
                   </div>
                 </div>
